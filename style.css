@@ -1,0 +1,2219 @@
+*{
+    padding: 0;
+    margin: 0;
+     box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+} 
+main {
+  width: 100%;
+  height: 100%;
+    
+  /* important */
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    background-color: rgb(15, 161, 161);
+   
+ }
+.section {
+  font-family:Arial, Helvetica, sans-serif;
+  height: 100vh;
+  
+  /* important */
+  scroll-snap-align: start;
+  } 
+
+.section1 {
+ min-height: 100%;
+background-color: rgb(15, 161, 161);
+background-color: rgb(5, 142, 184);
+ color: white;
+}
+
+.section2 {
+  min-height: 100%;
+  color: white;
+}
+.section3 {
+    min-height:100%;
+    background: rgb(114, 108, 96);
+    color: white;
+  }
+  
+  .section4{
+    min-height: 100%;
+    }
+  .section5 {
+    min-height: 100%;
+    background-color: rgb(133, 127, 127);
+    background-color: rgb(110, 107, 107);
+    color: white;
+  }
+  .msgMeSection{
+    min-height: 100%;
+    background-color: rgb(221, 210, 221);
+  }
+ 
+ ::-webkit-scrollbar {
+    width: 0 !important;
+    display: none;
+    }
+
+    /* ### CSS For Change 
+     Diamond Style While Scrolling On Each Section ### */
+
+     .diamondDiv{
+      position: absolute;
+      margin-top: 20vh;
+      margin-left: 80vw;
+  }
+  .diamond{
+      color:white;
+      font-size: 2.5vw;
+      display: block;
+      margin-top: 3vh;
+      padding: 1rem;
+      transition: all .5s linear;
+  
+  }
+  .div1Home{
+    position: absolute;
+    display: block;
+    width: 20vw;
+    height: 100vh;
+    
+  }
+  .divLeftHome{
+   position: absolute;
+    z-index: 15;
+    width: 20vw;
+    height: 60%;
+    
+    margin-top: 10vh;
+    
+  }
+  .diamondFont{
+   position: relative;
+   /*display: block;*/
+    opacity: 0.8;
+    font-weight: 100;
+    color:rgb(133, 184, 184);
+    color:hsl(229, 85%, 11%);
+    color:white;
+    transition: all 1s linear;
+   font-size: 1.4vw;
+   padding-top: 1vh;
+  margin-top: 2vh;
+   /*-webkit-text-stroke: .10px transparent;*/
+}
+
+
+  .changeDiamondCSS1{
+      transform: translateX(-20px);
+      opacity: 1;
+      color:red;
+     } 
+    /* .changeDiamondCSS1{
+      transform: translate(1.5vw);
+      
+      color:rgb(139, 218, 75);
+      color:hsl(229, 85%, 11%);
+      
+     } */
+    /* ####### Big Side MENU / Mobile Ph Menu ######## */
+    .bigMobilePhMenu{
+      position: fixed;
+      z-index: 15;
+      display: flex;
+      flex-direction: column;
+      right:-32%;
+      top:12%;
+      width: 32vw;
+      height: 80vh;
+      background-color:white;
+      color:hsl(229, 85%, 11%);
+
+      opacity: 0;
+      transition: all 1s ease-in-out;
+      z-index: 200;
+    }
+    .showBigScreenSideMenu{
+      opacity: 0.9;
+      right: 0;
+    }
+    .topDiv{
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      height: 60%;
+      font-size: 1vw;
+    }
+    .leftSpan{
+      flex:45%;
+      
+      
+   }
+   .lsSpanM{
+     display:block;
+     margin-left: 2vw;
+     margin-top: 7vh;
+    
+   }
+   
+   .lsM{
+     margin-top:5vh;
+     position: relative;
+     width: 80%;
+     height: 2rem;
+     /*border: .5px solid white;*/
+     
+     cursor: pointer;
+     /*text-align: center;*/
+     padding-top: .5rem;
+     
+   }
+   .lsM:hover{color:rgb(5, 142, 184);font-weight:500;}
+   .left1M{
+    cursor:default;color:rgb(102, 44, 211);
+   }
+   .left2M{
+     width: 80%;
+     
+   }
+   
+   .rightSpan{
+     flex:55%;
+    
+   }
+   .rsSpanM{
+     display:block;
+     margin-left: 4vw;
+     margin-top: 20vh;
+     
+   }
+   .rsM{
+     
+    font-size: 1vw;
+    margin-top:5vh;
+   
+    width: 90%;
+    
+    /*border: .5px solid white;*/
+    
+    cursor: pointer;
+    /*text-align: center;*/
+    padding-top: .5rem;
+     
+   }
+   .rsM:hover{color:rgb(5, 142, 184);font-weight: 400;}
+   
+   /*  ---- section5 footer line--- */
+   /* `footer-line` not for mobile menu */
+   .footerLineM{
+     width: 80%;
+     height: 2px;
+     margin-left: 10%;
+     margin-top: 2vh;
+     
+   }
+   /* ------- footer bottom div ----- */
+   
+   .bottomDiv{
+    display: flex;
+    flex-direction:column;
+    width: 100%;
+    height: 35%;
+    font-size: 100%;
+   }
+   .copyRightSignM{
+    display: flex;
+    flex-direction: row;
+     flex:50%;
+     margin-top:7vh;
+     
+     
+   }
+   .cs1M{
+    display: inline-block;
+     margin-left: 5%;
+     font-size: 120%;
+     color:rgb(102, 44, 211);
+   }
+   .cs2M{
+    display: inline-block;
+     margin-left:5%;
+     font-size: 110%;
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 
+     'Lucida Grande', 
+     'Lucida Sans Unicode', Geneva, 
+      Verdana, sans-serif;
+     word-spacing: 2px;
+     color:rgb(102, 44, 211);
+   }
+   .socialMediaSpanM{
+    flex:100%;
+     margin-left: 2vw;
+     margin-top:1.5vh;
+     
+     
+   }
+   .socialMediaIconsM{
+    display: flex;
+    flex-direction: row;
+   
+     font-size: 100%;
+     cursor: pointer;
+   }
+   
+   .smM{
+    font-size: 100%;
+    margin-top:1.5vh;
+    margin-left:1.25vw;
+    position: relative;
+    width: 10%;
+    height: 2rem;
+    /*border: .5px solid white;*/
+    
+    cursor: pointer;
+    /*text-align: center;*/
+    padding-top: .5rem;
+   }
+   .smM:hover{
+     color:rgb(25, 116, 177);
+     /*color:hsl(229, 85%, 11%);*/
+     font-weight: bold;
+   }
+   .fbM{
+     font-weight: bold;
+   }
+   
+ /* _________ HAM MENU __________ */
+ /* ######## Big Screen **Ham Menu ####### */
+.homeSpan{
+    position:fixed;
+    z-index: 15;
+    left:3%;
+    top:7%;
+    width: 10%;
+    height: 3vh;
+    cursor: pointer;
+   /* background-color: lightblue;*/
+}
+.fontAwesomeHome:hover
+{color: rgb(156, 223, 219);}
+.fontAwesomeHome{
+  position: relative;
+    /*color: rgb(133, 184, 184);  */
+    color:white;
+    color:rgb(163, 156, 156);
+    font-size: 2.25rem;
+
+}
+.hamMenuSpan{
+    position:fixed;
+    z-index: 15;
+    left:92%;
+    top:7%;
+    width: 10%;
+    height: 2rem;
+   }
+.hamMenuSpan:hover{cursor:pointer;}
+
+.nav-line1{
+      position:relative;
+      width: 4vw;
+      height: 3px;
+      background-color:rgb(211, 241, 241);
+      background-color: rgb(133, 184, 184);
+      background-color: hsl(230, 39%, 15%);
+      background-color: white;
+      background-color:rgb(185, 181, 181);
+      margin-bottom: 10px;
+      transition: all 1s linear;
+      
+}
+.nav-line2{
+    position: relative;
+    /*top:4px;  */
+    width: 3vw;
+    height: 3px;
+    background-color:rgb(211, 241, 241);
+    background-color: hsl(230, 39%, 15%);
+    background-color: white;
+    background-color: rgb(185, 181, 181);
+    transition: all 1s linear;
+     /* change */
+     /*transform: rotate(-60deg);*/
+     /*transform: scaleX(1.5);*/
+    
+}
+
+/* ##### Change Nav Lines When Click ###### */
+.change-nav-line1{
+  transform: rotate(60deg) scale(.9) translate(2px,6px);
+  background-color:hsl(230, 39%, 15%);
+  width: 2.7vw;
+  
+}
+
+.change-nav-line2{
+  transform: rotate(-65deg) scale(1.2)translate(6px,-4px);
+  background-color:hsl(230, 39%, 15%) ;
+  width: 2.2vw;
+  height: 2.2px;
+  
+}
+
+/* ######################################  */
+.div1{
+   
+   display: block;
+   z-index: 1;
+   left: 0;
+   top: 0%;
+   width: 67vw;
+   height: 100%;
+   background-color: hsl(230, 39%, 15%); 
+   background-color: rgb(87, 96, 136);
+  }
+.div1a{
+    padding-top: 5%;
+    
+}
+.para1{
+    filter: brightness(1.25);
+    margin-left: 12%;
+    font-size: 2.5vw;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    color:rgb(5, 172, 172);
+    color:rgb(5, 142, 184);
+    font-family: 'Franklin Gothic Medium', 
+    'Arial Narrow', Arial, sans-serif;
+}
+.para1a{
+    margin-left: 12%;
+    margin-top: 10%;
+    color:rgb(15, 161, 161);
+    color:rgb(5, 142, 184);
+    font-size: 3.6vw;
+    font-weight: bolder;
+    word-spacing: 3px;
+    letter-spacing: 2px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.para1b{
+    margin-left: 12%;
+    margin-top: 2.2vw;
+    color:rgb(217, 236, 236);
+    font-size: 1.5vw;
+   font-weight: 100;
+    word-spacing: 2px;
+    font-family: 'Franklin Gothic Medium', 
+    'Arial Narrow', Arial, sans-serif;
+}
+.floatPara{
+     float: left;
+     color:rgb(199, 214, 214);
+     font-size: 1.20vw;
+    font-weight: lighter;
+     word-spacing: 2px;
+     font-style:oblique;
+     line-height: 1.4;
+     font-family:Arial, Helvetica, sans-serif;
+
+}
+.para1c{
+    margin-left: 8vw;
+    margin-top: 10vh;
+}
+.para1d{
+    margin-left: 4vw;
+    margin-top: 10vh;
+}
+/* ------------------------------ */
+.div1p{
+    position: relative;
+    display: inline-block;
+    z-index: 5;
+   border:.5px solid white;
+   border: .5px solid rgb(231, 222, 222);
+    left:57vw;
+    top:-75%;
+   width: 20vw;
+   height: 55vh;
+}
+.imgClass{
+    position: relative;
+    transform: translate(-20px,-20px);
+    width: 100%;
+    height: 100%;
+  
+   filter: grayscale(60%) contrast(110%)
+   saturate(.6)sepia(14%);
+
+    
+}
+
+/* ------  Cube Font Awesome------ */
+
+.divLeftHome{
+    position: fixed;
+    z-index: 10;
+    top: 40vh;
+    height: 20vh;
+    left:94%;
+    opacity: 1;
+    
+}  */
+
+.diamondFont{
+   /* position: relative;*/
+    opacity: 1;
+    font-weight: 100;
+    color:rgb(133, 184, 184);
+    color:hsl(229, 85%, 11%);
+    
+   font-size: 1.4vw;
+   padding-top: 2vh;
+   -webkit-text-stroke: .10px transparent;
+}
+/*.hideDiamondFont{
+  opacity: 0;
+} */
+
+
+
+
+/*  ################ section2 / PART 2 ############### */
+.part2{
+  display: flex;
+  background-color: rgb(133, 127, 127);
+  background-color: white;
+  background-image:
+   linear-gradient(gray,rgb(125, 178, 180));
+  
+  /*background-color: rgb(196, 141, 141);*/
+  /*background-color: rgb(242, 243, 243);*/
+}
+.part2 div{
+  flex-direction: column;
+  width: 40vw;
+ 
+  border-radius: 6px;
+}  
+.div2a{
+  position: relative;
+  width: 40vw;
+  height: 85vh;
+  
+  margin-left: 7vw;
+  top:5vh;
+} 
+.para2a{
+  position: relative;
+  top:15vh;
+  font-size: 4rem;
+  color:rgb(19, 19, 116);
+ color:hsl(230, 39%, 15%);
+ color:rgb(87, 96, 136);
+ 
+  
+    font-weight: bolder;
+    word-spacing: 3px;
+    letter-spacing: 2px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.para2b1{
+  position: relative;
+  width: 95%;
+  text-align:justify;
+  font-size: 1.25vw;
+  top:24vh;
+  color:hsl(230, 39%, 15%);
+  color:hsl(229, 85%, 11%);
+  
+  padding: 2px;
+  word-spacing: 4px;
+  line-height: 1.8;
+ /* letter-spacing: 2px;*/
+  font-family: 'Franklin Gothic Medium', 
+  'Arial Narrow', Arial, sans-serif;
+}
+.fontDesign1{
+  margin-left: 15vw;
+  color:rgb(104, 121, 121);
+  font-size: 7vw;
+  margin-top:26vh;
+}
+
+/* -----Right Div 'Engeeneiring' ------ */
+
+.div2b{
+  position: relative;
+  width: 40vw;
+  height: 85vh;
+  
+  margin-left: 7vw;
+  top:5vh;
+} 
+.para2b2{
+  position: relative;
+  top:16vh;
+  
+  
+  font-size: 4rem;
+  
+  color:hsl(230, 39%, 15%);
+  color:rgb(87, 96, 136);
+    font-weight: bolder;
+    word-spacing: 3px;
+    letter-spacing: 2px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.para2b3{
+  
+  position: relative;
+  width: 95%;
+  text-align:justify;
+  font-size: 1.25vw;
+  top:25vh;
+  color:hsl(229, 85%, 11%);
+  color:rgb(87, 96, 136);
+  color:hsl(229, 85%, 11%);
+  font-weight: 500;
+  /*color:hsl(230, 39%, 15%);*/
+  padding: 2px;
+  word-spacing: 4px;
+  line-height: 1.8;
+ /* letter-spacing: 2px;*/
+  font-family: 'Franklin Gothic Medium', 
+  'Arial Narrow', Arial, sans-serif;
+}
+.fontDesign2{
+  position: relative;
+  margin-left: 15vw;
+  color:rgb(152, 184, 184);
+  font-size: 7vw;
+  top: 10vh;
+}
+
+/* ############# Section 3/ PART 3 ############ */
+
+.part3{
+  display: flex;
+  flex-direction: row;
+   background-color: hsl(230, 39%, 15%);
+   background-color: rgb(87, 96, 136);
+   transition: background-color 300ms;
+  /* background-color: rgb(242, 243, 243);  */
+}
+.part3 article{
+  position: relative;
+ width: 40vw;
+  /*width: 50vw;*/
+
+  height: 98vh;
+}  
+.part3Article1{
+    margin-left:7vw;
+   margin-top: 2vh;
+   opacity: 1;
+   z-index: 1;
+ } 
+.spanO{
+  font-size:3.2rem;
+}
+.heading1Part3{
+  font-size: 2vw;
+  font-family: 'Times New Roman', Times, serif;
+ /* margin-top: -2%;*/
+ margin-left: 3vw;
+  font-weight: bolder;
+  color:rgb(133, 184, 184);
+  color:rgb(5, 142, 184);
+}
+.para1Part3{
+  margin-left: 5vw;
+  margin-top: 2vh;
+}
+.pa{
+    filter: brightness(250%) contrast(200%);
+  font-size: 1.20vw;
+  line-height: 4.25vh;
+  color:white;
+  transform: scaleX(1.1);
+
+}
+.pa2{
+  margin-top: 2vh;
+}
+
+
+
+.part3Article2{
+  position: relative;
+ height: 95%;
+/* background-color: rgb(149, 223, 149);*/
+  margin-top: 2vh;
+  margin-left: 5vw;
+ 
+  z-index: 100;
+}
+/* =========== SVG Img AND FontAwesome ============= */
+
+.phoneImg{display: none;}
+.ilusrtationImg{
+height: 97%;
+left: 5%;
+z-index: -1;
+}
+.imgA1{position: relative;
+   width: 80%;
+   height: 100%;
+   margin-left:2%;
+   opacity: 1;
+   z-index: 8;
+}
+._span{
+ /* position: fixed;   */
+ position: absolute;
+  display: inline-block;
+  z-index: 10;
+}
+
+.htmlSpan{
+  font-size: 3vw;
+  margin-left: 8vw;
+  margin-top: 3vh;
+  opacity: .9;
+  color:rgb(100, 83, 83);
+}
+.cssSpan{
+  font-size: 2.2vw;
+ margin-left: 8vw;
+  margin-top: 14vh;
+  color:rgb(178, 194, 178);
+}
+.sqJs{
+  font-size: 2.2vw;
+  margin-left: 8vw;
+  margin-top: 23vh;
+  color:rgb(199, 222, 223);
+}
+.lapTopSpan{
+  font-size: 3.2vw;
+  margin-left: 14vw;
+  margin-top: 14vh;
+  color:rgb(115, 156, 156);
+}
+.atSpan{
+  font-size: 2vw;
+  margin-left: 30vw;
+  margin-top: 50vh;
+  color:rgb(32, 32, 63);
+}
+.folderSpan{
+  font-size: 5vw;
+  margin-left: 6vw;
+  margin-top: 70vh;
+  opacity: 8;
+  color:rgb(38, 37, 39);
+}
+
+
+.textDesignSpan{
+  font-size: 1.5vw;
+  font-style:oblique;
+  word-spacing: 3px;
+  margin-left: 5vw;
+  margin-top: 40vh;
+  color:white;
+}
+.textDesign2Span{
+  font-size: 1.5vw;
+  font-style:oblique;
+  word-spacing: 3px;
+  margin-left: 29vw;
+  margin-top: 7vh;
+  color:white;
+  display: none;
+  transform: rotate(90deg);
+}
+.textResponsiveSpan{
+  font-size: 1.5vw;
+  font-style:oblique;
+  word-spacing: 3px;
+  margin-left: 24.5vw;
+  margin-top: 0vh;
+  display: none;
+  color:white;
+}
+.textHtmlSpan{
+  font-size: 2vw;
+  margin-left: 28vw;
+  margin-top: 40vh;
+  color:rgb(155, 152, 152);
+  transform: rotate(90deg);
+}
+.textHtml2Span{
+  font-size: 1.8vw;
+  font-style: italic;
+  margin-left: 12vw;
+  word-spacing: 2px;
+  margin-top: 87vh;
+  color:rgb(198, 221, 208);
+}
+.textcreativitySpan{
+  display: none;
+  font-size: 2vw;
+  left: 0vw;
+  margin-top: 50vh;
+  color:rgb(198, 221, 208);
+  transform: rotate(90deg);
+}
+.textDevSpan{
+  font-size: 2vw;
+  font-style: italic;
+  margin-left: 10vw;
+  margin-top: 20vh;
+  color:rgb(198, 221, 208);
+  transform: rotate(90deg);
+}
+.textDev2Span{
+  font-size: 2vw;
+  font-style: italic;
+  margin-left: 10vw;
+  margin-top: 2vh;
+  color:rgb(198, 221, 208);
+}
+
+.textTypoSpan{
+  font-size: 1.8vw;
+  margin-left: 26vw;
+  bottom:20vh;
+  color:rgb(198, 221, 208);
+  transform: rotate(90deg);
+}
+.textPawanSpan{
+  font-size: 2.25vw;
+  font-family:fantasy;
+  margin-left: 4vw;
+  margin-top: 72vh;
+  color:rgb(160, 229, 224);
+  /*transform: rotate(90deg);*/
+}
+
+.sassSpan{
+  
+  font-size: 2.6vw;
+  margin-left: 28vw;
+  margin-top: 33vh;
+  color:rgb(78, 70, 70);
+}
+.forkGit{
+  
+  font-size: 2.6vw;
+  margin-left: 8vw;
+  margin-top: 62vh;
+  color:rgb(150, 142, 142);
+}
+.gitSpan{
+  font-size: 2.6vw;
+  margin-left: 8vw;
+  margin-top: 50vh;
+  color:rgb(31, 39, 39);
+}
+.plus{
+  display: none;
+  font-size: 1.8vw;
+  margin-left: 6vw;
+  margin-top: 28vh;
+  color:rgb(111, 194, 233);
+  font-weight: bold;
+}
+.codeSpan{
+  font-size: 3vw;
+  margin-left: 10vw;
+  margin-top: 36vh;
+  color:rgb(98, 95, 100);
+}
+.gearSpan1{
+  font-size: 5.2vw;
+  margin-left: 0vw;
+  margin-top: 28vh;
+  color:rgb(57, 61, 61);
+  color:rgb(87, 96, 136);
+  opacity: 0.8;
+}
+/*   .part3Article2{z-index: 2000;}*/
+.gearSpan2{
+  font-size: 3.2vw;
+  margin-left: 5vw;
+  margin-top: 34vh;
+  color:rgb(57, 61, 61);
+  opacity: 0.9;
+}
+.codeFileSpan{
+  font-size: 3.8vw;
+  margin-left: 17vw;
+  margin-top: 36vh;
+  color:rgb(64, 63, 80);
+  opacity: 0.9;
+}
+
+.palette1{
+  display: none;
+  font-size: 3.6vw;
+  margin-left: 17vw;
+  margin-top: 41vh;
+  color:rgb(177, 150, 226);
+}
+.arrow{
+  font-size: 3vw;
+   font-weight: lighter;
+  margin-left: 12vw;
+  margin-top: 36vh;
+  
+  color:rgb(88, 59, 55);
+}
+
+/* -----animation css ----------- */
+.gearSpan1 {
+  
+ /* position: relative;  */
+  animation: gearSpan1 10s linear 0.5s infinite backwards;
+}
+.gearSpan2{
+  animation: gearSpan2 7s ease 0.5s infinite;
+}
+
+@keyframes gearSpan1{
+  0%   { transform: rotate(0deg);}
+  10%  { transform: rotate(36deg); }
+  20%  {transform: rotate(72deg); }
+  30%  {transform: rotate(108deg); }
+  40%   { transform: rotate(144deg);}
+  50%  { transform: rotate(180deg); }
+  60%  {transform: rotate(216deg); }
+  70%  {transform: rotate(252deg); }
+  80% {transform: rotate(288deg); }
+  100% {transform: rotate(360deg); }
+}  
+@keyframes gearSpan2{
+  0%   { transform: rotate(10deg);}
+  10%  { transform: rotate(50deg); }
+  20%  {transform: rotate(80deg); }
+  30%  {transform: rotate(110deg); }
+  40%   { transform: rotate(150deg);}
+  50%  { transform: rotate(190deg); }
+  60%  {transform: rotate(230deg); }
+  70%  {transform: rotate(270deg); }
+  80% {transform: rotate(320deg); }
+  100% {transform: rotate(360deg); }
+}
+
+/* ################################################# */
+/* =============== Section 4 =================== */     
+  .section4{
+    position: relative;
+  background-image:
+  linear-gradient(rgb(56, 204, 204),hsl(230, 39%, 15%));
+  display: flex;
+}
+.section4 .sec4BGImg{
+  filter: brightness(40%) saturate(500%);
+  position: absolute;
+ z-index: 5;
+  width: 100vw;
+  height: 100vh;
+}
+
+
+
+  .section4Div1{
+    
+    z-index: 10;
+    width: 100vw;
+    height: 20vh;
+    
+    
+    
+  }
+  .section4Para1{
+    z-index: 10;
+    position: relative;
+    top:8vh;
+    width: 100vw;
+    height: 12vh;
+    font-family: Georgia, serif;
+    font-size: 2vw;
+    font-style:italic;
+    
+    text-align: center;
+    color:hsl(192, 92%, 36%);
+    
+    word-spacing: 3px;
+    line-height: 1.4;
+    transition: all 1s linear;
+    
+  }
+  .section4Para1AnimationCSS{
+       opacity: 1;
+       color:hsl(229, 85%, 11%);
+  }
+  .section4Line1{
+    z-index: 10;
+    position: relative;
+    width: .1vw;
+    height: 3px;
+    border-radius: 20%;
+    border-style: none;
+    background-color:hsl(192, 92%, 36%);;
+    margin-left: 35vw;
+    opacity: 0.5;
+    transition: all 1.2s linear ;
+    top: 4vh;
+    
+
+  }
+  .lineAnimationCSS{
+    width: 30vw;
+    opacity: 1;
+    background-color: hsl(247, 8%, 21%);
+
+  }
+  
+ /* ...................... */
+ .section4Para2{
+  z-index: 10;
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  height: 80vh;
+ position:absolute;
+ margin-top:20vh;
+    left:0;
+ }
+ .section4BottomSpan1{
+   display: flex;
+    width: 60vw;
+    height: 70vh;
+    transition: all 1s linear;
+   }
+.section4BottomSpan2{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 20vw;
+  height: 70vh;
+  transition: all 1s linear;
+  }
+ .sec4Para{
+  /*position: absolute;*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  height: 70%;
+  margin-top: 15vh;
+  margin-left: 20%;
+ 
+  text-align: center;
+  font-size: 1.40vw;
+  font-family: cursive;
+  font-style: italic;
+  
+  font-variant-ligatures: common-ligatures;
+  color:hsl(229, 24%, 91%);
+  border:none;
+  border-radius: 6px;
+  box-shadow: 7px 7px 1px rgb(12, 74, 99);
+  /*padding:5% 0 0 5%;*/
+  opacity: 0.5;
+  font-weight: lighter;
+  word-spacing: 3px;
+  transition: all 1s linear;
+  background-color: transparent;
+
+  
+ }
+ 
+ 
+ .sec4ParaChange{
+  border: .5px solid white;
+  color:white;
+ filter: brightness(200%);
+ opacity: 1;
+ }
+ 
+ 
+ 
+
+ .sec4BottomPara{
+ display: flex;
+ font-family: Georgia, serif;
+ font-size: 1.25vw;
+ border: .5px solid white;
+ text-align: center;
+ cursor: pointer;
+ width: 100%;
+ height: 16%;
+ padding-top:4vh;
+ padding-left: 3vw;
+ margin-top:12vh ;
+  color:white;
+  opacity: 0.4;
+  font-weight:100;
+  border-radius: 6px;
+  background-color: transparent;
+  transition: all 1s linear;
+ }
+ .sec4BottomPara:hover{background-color: hsl(229, 85%, 11%);}
+ .spanS1{
+  /*position: relative;*/
+  display:flex;
+  
+  font-size: 1.8vw;
+  color:white;
+  margin-left: 5vw;
+  cursor: pointer;
+  opacity: 0;
+ }
+ .bgChange1{
+  opacity: 1;
+ } 
+   
+ .sec4BottomParaChange{
+  opacity: 1; 
+  border: .5px solid white;
+  
+ }
+ 
+
+
+/* ########@@@@@@@@@ msgMeSection @@@@@@@@########## */
+.msgMeSection{
+  display: flex;
+  width: 100vw;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(255, 255, 255);
+  background-color: rgb(206, 219, 231);
+  
+  
+ 
+}
+.msgMeSection article{
+  justify-content: center;
+  width:100%;
+  background-color: rgb(193, 211, 228);
+}
+
+.wrapDiv1{
+ 
+  width:50%;
+  height: 35vh;
+  margin-left: 25%;
+  text-align: center;
+}
+
+.msgHeading1{
+ padding-top: 10%;
+ font-size: 2vw;
+ color:rgb(87, 96, 136);
+ color:rgb(5, 142, 184);
+ font-weight: bold;
+}
+.msgHeading2{
+  padding-top: 2.5%;
+  font-size: 1.25vw;
+  color:rgb(28, 28, 32);
+  color:rgb(87, 96, 136);
+ }
+
+.wrapDiv2{
+  width:50%;
+  height: 65vh;
+  margin-left: 25%;
+}
+.wrapNameEmail{
+  display: flex;
+  flex-direction:row;
+  width: 100%;
+  height: 15vh;
+  
+}
+
+.nameLabel{
+  font-size: 1.25vw;
+  color:rgb(5, 142, 184);
+  font-weight: bold;
+}
+
+.name1{
+  text-align: left;
+  font-size: 1vw;
+  margin-top: 2vh;
+  padding-top: 8px;
+  width: 18vw;
+  height: 5vh;
+  border: none;
+  border-bottom: .5px solid gray;
+  background-color: rgb(210, 219, 228);
+  
+}
+input:focus{
+  outline: none;
+}
+
+
+.emailFlex{
+  margin-left: 12vw;
+ /* flex:1;*/
+}
+.emailLabel{
+  font-size: 1.25vw;
+  color: rgb(5, 142, 184);
+  font-weight: bold;
+  /*margin-left: 2vw;*/
+  
+}
+.email1{
+  text-align: left;
+  font-size: 1vw;
+  margin-top: 2vh;
+  padding-top: 8px;
+  width: 18vw;
+  height: 5vh;
+  border: none;
+  border-bottom: .5px solid gray;
+  background-color: rgb(210, 219, 228);
+  
+}
+
+.textClass{
+  position: relative;
+  top: 2.25vh;
+  font-size: 1.25vw;
+  font-style: oblique;
+  color: purple;
+  color: rgb(5, 142, 184);
+}
+.textArea2{
+  position:relative;
+  top:4vh;
+  font-size: 1.25vw;
+  color:rgb(83, 77, 77);
+  font-family: 
+  Georgia, Times, 'Times New Roman', serif;
+  width: 100%;
+  height: 80px;
+  border: none;
+  border-bottom: solid gray;
+  background-color: rgb(210, 219, 228);
+  overflow-y: visible !important;
+}
+.textArea2:focus{outline: none;}
+.btn{
+  position: relative;
+  width: 24%;
+  height: 10vh;
+  background-color:rgb(136, 130, 130);
+  border-radius: 4px;
+  
+  border-style: none;
+  padding: 3px;
+  font-size: 1.25vw;
+  font-weight: bold;
+  color:white;
+  cursor: pointer;
+  margin-top: 10vh;
+  margin-left: 20vw;
+  transition: all 1s;
+}
+.btn:hover{
+  background-color:white; 
+  color:rgb(110, 107, 107);
+  border-right: 3px solid white;
+  border-bottom: 3px solid white;
+  border-top: none;
+  border-left: none;
+  border-radius: 4px;
+}
+
+
+
+
+
+
+ /* ##########--------Section 5 --------######### */
+
+.section5TopDiv{
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  }
+.sec5LeftSpan{
+   flex:30%;
+  }
+.lsSpan{
+  display:block;
+  margin-left: 9vw;
+  margin-top: 15vh;
+}
+.ls{
+  font-size: 1.25vw;
+  margin-top:10%;
+  position: relative;
+  width: 50%;
+  height: 2.2rem;
+  cursor: pointer;
+  padding-top: .5rem;
+  
+}
+.left1{font-size: 1.3vw; color:rgb(197, 186, 186);}
+.ls:hover{color:hsl(184, 85%, 13%);font-weight:500;}
+.left1:hover{cursor:default;color:white;}
+.left2{
+  width: 90%;
+}
+
+.sec5RightSpan{
+  flex:70%;
+ }
+.rsSpan{
+  display:block;
+  margin-left: 10vw;
+  margin-top: 30vh;
+}
+.rs{
+  font-size: 1.25vw;
+  position: relative;
+  width: 20%;
+  height: 2.2rem;
+  margin-top: 4%;
+  cursor: pointer;
+  padding-top: .5rem;
+  
+}
+.rs:hover{color:hsl(229, 85%, 11%);font-weight: 500;}
+
+/*  ---- section5 footer line--- */
+.footerLine{
+  width: 80vw;
+  height: 2px;
+  margin-left: 10%;
+  margin-top: 4px;
+  background-color: white;
+}
+/* ------- footer bottom div ----- */
+.section5BottomDiv{
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  height: 37vh;
+  margin-top: 2vh;
+}
+.copyRightSign{
+  width: 40vw;
+  margin-top: 8vh;
+}
+.cs1{
+  margin-left: 9vw;
+  font-size: 1.3vw;
+}
+.cs2{
+  margin-left:2vw;
+  font-size: 1.35vw;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 
+  'Lucida Grande', 
+  'Lucida Sans Unicode', Geneva, 
+   Verdana, sans-serif;
+  word-spacing: 2px;
+}
+.socialMediaSpan{
+  width: 60vw; 
+}
+.socialMediaIcons{
+  position: relative;
+  top: 10vh;
+  width: 30vw;
+  margin-left: 3vw;
+  font-size: 1.40vw;
+  
+}
+
+.sm{
+  display: inline-block;
+  margin-left: 4vw;
+  cursor: pointer;
+}
+
+.sm:hover{color:hsl(229, 85%, 11%);font-weight: 500;}
+ 
+/*@ media query @ media query @ media query @ media query  */ 
+/* #################### MEDIA_QUERY ############### */
+@media (min-width:1441px) and (max-width: 2600px) {
+   /*.pa{
+    height: 80%;
+    background-color: pink;
+    line-height: 1.4;
+    font-size: 1.4vw;
+    color:red;
+  } */
+}
+
+/* ######## Media Quaries For LandScape (NOT Potrait)######## */
+/* 1 
+   MEDIA QUERY FOR 1440PX - 1200 PX 
+*/
+@media (min-width: 1200px) and 
+      (max-width: 1440px) {
+  /* CSS rules for screens with a width between 1200 and 1440 pixels */
+  .para2a{
+    font-size:3rem;
+  }
+  .para2b2{
+   font-size: 3rem;
+  }
+  .para2b1{
+    font-size: 1.2rem;
+  }
+  .para2b3{
+    font-size: 1.2rem;
+  }
+
+ /* .section4BottomSpan1{
+    height: 48vh;
+  }*/
+  
+}
+/* for paragraph .pa */
+  @media (min-width: 1300px) and (max-width: 1440px){
+    /*.para1Part3{
+      margin-top: 1vh;
+      width: 100%;
+      height:90%;
+    } 
+    .pa{
+      width: 100%;
+      
+      margin-top: 2%;
+      height: 42%;
+      font-size: 1.4rem;
+      color:rgb(161, 212, 19);
+      line-height: 1.4;
+    }   */
+ }
+
+/* 2
+   ######  MEDIA QUERY FOR 1200PX - 992 PX #####
+*/
+@media (min-width: 992px) and (max-width: 1200px){
+   .para2a{
+    font-size: 3rem;
+   }
+   .para2b1{
+    font-size: 1.20rem;
+   }
+   .para2b2{
+    font-size: 3rem;
+   }
+   .para2b3{
+    font-size: 1.20rem;
+   }
+   .spanO{
+    font-size:2.2rem;
+  }
+  
+  .section4Line1{
+    margin-left: 30vw;
+  }
+  .lineAnimationCSS{
+    width: 40vw;
+
+  } 
+}
+
+/* 3  LandScape ######## 
+   MEDIA QUERY FOR 1024PX - 768 PX 
+*/
+@media (min-width: 768px) and (max-width: 1024px){
+        .para2a{
+          font-size: 2rem;
+        } 
+        .para2b1{
+            font-size: .8rem;
+        }
+        .para2b2{
+          font-size: 2rem;
+        }
+        .para2b3{
+          font-size: .8rem;
+        }
+
+  /* section 3 */
+  .heading1Part3{
+    font-size: 2.5vw;
+  } 
+  .spanO{
+    font-size: 3.5vw;
+  }
+ 
+  
+}
+
+/* 4  #### LandScape
+  ********* MEDIA QUERY FOR 768PX - 481 PX **********
+*/
+@media (min-width: 481px) and (max-width: 767px){
+      .para1d{
+        margin-left: 2vw;
+      }
+      .div1p{
+        width: 25vw;
+        height: 45vh;
+        margin-top: 8vh;
+      }
+      .floatPara{
+        font-size: .5rem;
+      }
+     
+}
+@media (min-width: 320px) and 
+(max-width: 880px)
+   and (orientation:landscape)  {
+    .fontAwesomeHome{font-size: 3vw;
+    color:rgb(163, 156, 156);} 
+    .para2a {font-size: 4vw;top:9vh}  
+    .para2b1 {font-size: 2vw;top:12vh;line-height: 1.5;}
+      .fontDesign1{font-size: 5vw;margin-top: 8vh;}
+      .para2b2{font-size: 4vw;top:4vh;}
+      .para2b3{font-size: 2vw;top:10vh;line-height: 1.5;}
+      .fontDesign2{font-size: 5vw;margin-top: 1vh;}
+      .rsSpan{margin-top: 16vh;}
+}
+
+
+
+/*#################################################*/
+/* ~~~~~~ MiN-WIDTH: 768PX , MaX-WIDTH: 1024PX ~~~~~~~ */
+/* ####### ORIENTATION(POrTRAiT) MEDIA-QUERY ############ */
+
+@media (min-width:768px) and 
+         (max-width:1024px) and 
+           (orientation:portrait){
+      
+     /* ##### HOME PAGE/ Section-1 ######  */
+     
+     .para1{
+      font-size: 3.5vw;margin-top: 4.5vh;
+      margin-left: 9vw;
+       }
+      .para1b{font-size: 2.5vw; margin-top: 8vh;}
+      .floatPara{font-size: 2vw; word-spacing: 5px;}
+      .floatDiv{
+        display: flex;
+        flex-direction: column;
+      }
+      .para1d{
+        margin-left:8vw ;
+        margin-top: 4vh;
+      }
+
+      .div1p{
+        width: 28vw;
+        height: 35vh;
+        margin-top: 10vh;
+      }
+
+      /* Section-2   */
+      .para2b1{
+        font-size: 2.5vw;
+        font-weight: bold;
+      }
+      .para2b3{
+        font-size: 2.5vw;
+        font-weight: bold;
+      }
+      
+      /* #########  section 3 ########### */
+     
+      .part3 article{
+        position: relative;
+       width: 46vw;
+        /*width: 50vw;*/
+      
+        height: 98vh;
+      } 
+      .part3Article2{
+        position: relative;
+        width: 97%;
+        margin-left:4%;
+        height: 98%;
+        margin-top: 5vh;
+      } 
+      .part3Article1{
+        width:94% ;
+        margin-left: 4vw;
+      }
+      .heading1Part3{
+        margin-left: 8vw;
+        margin-top: 4vh;
+        font-size: 4vw;
+      }
+      .ilusrtationImg{
+        margin-top: 5vh;
+        height: 95%;
+        left:2%;
+      }
+      .pa{
+        font-size: 2.20vw;
+        line-height: 2.5vh;
+      }
+      .pa1 , .pa2{margin-top: 3vh;line-height: 1.6;}
+      .imgA1{position: relative;
+        width: 92%;
+        height: 86%;
+        margin-left:1%;
+        opacity: 1;
+        z-index: 1;
+     }
+     .textHtml2Span{
+      
+      margin-top: 70vh;
+    }
+
+   /* ######### section4 ######## */
+    .fontAwesomeHome{font-size: 4vw;}
+    .nav-line1{width: 5vw;margin-bottom: 6px;}
+    .nav-line2{width: 4vw;}
+    .section4Para1{font-size: 4vw;}
+    .section4Line1{
+      top: 2vh;
+      margin-left:20vw ;
+    }
+    .lineAnimationCSS{width: 60vw;}
+     .section4Div1{
+      height: 25vh;
+    
+     } 
+
+     .sec4Para{
+      font-size: 1.6pw;
+      line-height:1.8 ;
+      padding: 20px;
+     }
+
+     .section4BottomSpan1{
+     width: 58vw;
+      height: 48vh;
+      }
+   .section4BottomSpan2{
+    margin-top:30vh;
+    height: 5vh;
+    width: 30vw;
+    
+     }
+    .sec4BottomPara{
+     margin-top: 0;
+     padding-left:5%;
+     padding-top: 6%;
+     text-align: center;
+     font-size: 2vw;
+     color:blue;
+     width: 100%;
+     height: 100%;
+      
+    }
+
+   /* #### msg Section #### */
+   
+   .msgHeading1{
+    font-size: 4vw;
+   }
+   .msgHeading2{
+    font-size: 3vw;
+   }
+   .btn{
+    width: 30%;
+    margin-left: 35%;
+    height: 14%;
+    font-size: 3vw;
+    font-weight: bold;
+   }
+   .wrapDiv1{
+    padding-top: 5vh;
+    width:80vw;
+    margin-left: 10vw;
+    height: 35vh;
+    /*margin-left: 25%;*/
+    text-align: center;
+   
+  }
+  .wrapDiv2{
+    width: 80vw;
+    margin-left: 10vw;
+    top: 10vh;
+  }
+  .msgForm{
+    width: 100%;
+    height: 90%;
+  }
+  .nameLabel{
+    font-size: 2.5vw;
+  }
+  .emailLabel{
+    font-size: 2.5vw;
+  }
+  .email1{width: 100%;font-size: 2vw;}
+  .name1{width: 100%; font-size: 2vw;}
+  .nameFlex{width: 100%;flex:1;}
+  .emailFlex{width: 100%;flex:1;}
+  .textClass{font-size: 3vw;}
+  .textArea2{font-size: 2.75vw;}
+
+  /* bottom/Section 5 */
+  .sec5LeftSpan{flex:45%;}
+  .sec5RightSpan{flex:55%;}
+  .rsSpan{
+    margin-top: 24vh;
+  }
+  .left1{font-size: 2.7vw;}
+  .ls{font-size: 2.5vw;}
+  .rs{font-size: 2.75vw;width: 40%;
+    word-spacing: 3px;
+    }
+  .cs1{font-size: 2.75vw;margin-left: 2vw;}
+  .cs2{font-size: 2.75vw;}
+  .socialMediaIcons{
+    top:4vh;
+    font-size: 3vw;
+    margin-left: 4vw;
+    }
+}
+
+/*################  PHONES  #######################*/
+/* ~~~~~~ MaX-WIDTH: 767PX , MiN-WIDTH: 480PX ~~~~~~~ */
+/* ####### ORIENTATION(POrTRAiT) MEDIA-QUERY ############ */
+
+/*@media (min-width:768px) and 
+         (max-width:1024px) and 
+           (orientation:portrait){
+
+
+           } */
+
+
+/* ~~~~~~ MaX-WIDTH: 481PX , MiN-WIDTH: 321PX ~~~~~~~ */
+/* ####### ORIENTATION(POrTRAiT) MEDIA-QUERY ############ */
+
+ @media screen and (min-width:320px) and 
+    (max-width:480px) and 
+      (orientation:portrait){ 
+  
+    .para1{
+      font-size: 4.5vw; 
+      margin-top: 4.5vh; 
+      margin-left: 14vw;}
+      .para1a{
+        font-size: 4.25vw;
+        margin-left: 8vw;
+      }
+    .para1b{
+      font-size: 3vw; 
+      margin-top: 2vh;
+      margin-left: 8vw;
+      word-spacing: 1.50;
+    }
+    /*.floatPara{
+      font-size: 1.8vw; 
+      word-spacing: 5px;}  */
+    .floatDiv{
+          display: flex;
+          flex-direction: column;
+    }
+    
+        .div1p{
+          width: 34vw;
+          height: 35vh;
+          margin-top: 11vh;
+          left:55vw;
+        }
+        .floatPara{
+          margin-top: 8vh;
+          margin-left: 8vw;
+          font-size: 2.50vw;
+          font-weight: bolder;
+          line-height: 1.50;
+        }
+
+    .homeSpan{
+      left:2vw;
+    }
+    .fontAwesomeHome{
+      font-size: 4.50vw;
+      margin-left: 5vw;
+    }
+  
+   /* Ham -Menu Lines */
+   .hamMenuSpan{
+    left: 85vw;
+   }
+   .nav-line1{
+    width: 10vw;
+   }
+   .nav-line2{
+    width: 8vw;
+   }
+   .diamondFont{font-size: 2.50vw;}
+   /*#### PHONE SIDE MENU #### */
+   .bigMobilePhMenu{
+    
+    right: -100%;
+    width: 100%;
+    height: 95vh;
+    margin-top: 5vh;
+   }
+   .leftSpan{margin-left: 5vw;}
+   .rightSpan{margin-left: 30vw;}
+   .showBigScreenSideMenu{opacity: 1;right: 0;}
+   .lsSpanM{font-size: 2.75vw;}
+  .left1M{font-size: 3vw;font-weight: bolder;}
+   .rsM{font-size: 2.75vw;}
+   .cs1M{margin-left: 5vw;}
+   .copyRightSignM{margin-left: 3vw;}
+   .socialMediaSpanM{
+    margin-left: 7vw;
+    padding-left: 2vw;
+    margin-top:-4vh;
+   }
+
+   /* section-2 */
+   .part2{display: block;flex: none;}
+   .part2 div{flex-direction: row;width: 90vw;}
+   .para2a{font-size: 7vw;top:3vh;margin-left: 30vw;}
+   .para2b2{
+    position:absolute;
+    font-size: 7vw;
+    top:1.5vh;
+    margin-left: 25vw;
+
+      }
+   .para2b1 , .para2b3{
+    font-size: 4vw;
+    word-spacing: 2px;
+    line-height: 1.4;
+    top:5vh;
+    }
+    .fontDesign1{
+      position:absolute;
+      margin-top:3vh;
+      margin-left:35vw ;
+      
+      font-size: 15vw;
+    }
+    
+  .div2a{
+    width: 80vw;
+    height: 45vh;
+    margin-left: 6vw;
+    margin-top:4vh;
+    
+  }
+  .div2b{
+    position: relative;
+    width: 80vw;
+    height: 45vh;
+    margin-left: 5vw;
+    margin-top:1vh;
+    
+  }
+  .fontDesign2{
+    position:absolute;
+    margin-top: 22vh;
+    margin-left:35vw ;
+    color:gray;
+    font-size: 15vw;
+  }
+  
+  /* *****#### SECTION-3 ####*****   */
+  .homeSpan{left: -6px;}
+  .part3{
+    display: flex;
+    flex-direction: column;
+  }
+  .para1Part3{
+    display: flex;
+    flex-direction: row;
+    margin-top: 4vh;
+    
+    /*margin-left: 2vw;   */
+  }
+  .heading1Part3{
+    font-size:4vw;
+    margin-left: 12vw;
+    }
+  .spanO{font-size: 6vw;}
+  .pa{
+    font-size:2.5vw;
+    color:rgb(1, 30, 37);
+    line-height:1.5;
+    width: 40vw;
+    margin-left: 1.5vw;
+    font-weight: bold;
+  }
+  .pa2{margin-left: 5vw;margin-top: .25rem;}
+  
+  ._span{display: none;}
+  .gearSpan1{
+    display: block;
+    font-size: 16vw;
+    margin-top: -7vh;
+    margin-left: 24vw;
+    color:black;
+    opacity: .4;
+     }
+  .gearSpan2{
+    display: block;
+    font-size: 10vw;
+    margin-top: -1vh;
+    margin-left: 35vw;
+    color:rgb(94, 79, 79);
+    opacity: .4;
+    }
+    .textPawanSpan{
+      font-style: italic;
+      font-family:Verdana, 
+      Geneva, 
+      Tahoma, sans-serif;
+      color:rgb(216, 245, 243);
+      display: block;
+      font-size: 5vw;
+      margin-top: 16vh;
+      margin-left:74vw ;
+      word-spacing: 8px;
+    }
+  .part3 article{
+    width:100vw;
+    height: 100vh;
+  }
+  .part3Article1{
+   position: absolute;
+    width: 80%;
+    height: 80%;
+    margin-left: 1.25vw;
+  }
+  .part3Article2{
+   position: absolute;
+
+   
+    width: 100%;
+    height: 50%;
+  }
+  .ilusrtationImg{
+    margin-top: 4%;
+    height: 80%;
+    width: 100%;
+  }
+  .imgA1{
+    margin-top: 0;
+    width: 80%;
+    height: 100%;
+    margin-left: 5%;
+    
+  }  
+  
+   /* ###### Section 4 ######## */
+   
+   .section4Para1{font-size: 6vw;}
+   .section4Line1{top:2vh}
+   .section4Para2{
+    display: flex;
+    flex-direction: column;
+   }
+   .section4BottomSpan1{
+    width: 76vw;
+    margin-left: 14vw;
+    height:70vh ;
+   }
+   .sec4Para{
+    margin:auto;
+    width: 100%;
+    font-size: 3.80vw;
+    word-spacing: 2px;
+    line-height: 1.4;
+   }
+   .section4BottomSpan2{
+    height: 22vh;
+    width: 70vw;
+    margin-left: 15vw;
+    text-align: center;
+   }
+   .sec4BottomPara{
+    width: 100%;
+    margin-left: 0%;
+    padding: 0;
+    height: 44%;
+    margin-top: 3%;
+    font-size: 4vw;
+    padding-top: 7%;
+    padding-left: 20%;
+   
+   }
+   .spanS1{
+    font-size: 2rem;
+    margin-left: 20%;margin-top: -3%;
+  }
+
+  /* #### msgMeSection  ##### */
+  
+  .msgHeading1{
+    font-size: 4.5vw;
+  }
+  .msgHeading2{
+    font-size: 3vw;
+  }
+  .flex1{
+    width: 80vw;
+    height: 15vh;
+  }
+  .wrapDiv1{
+    height: 12vh;
+    
+  }
+  .wrapDiv2{
+    height: 70vh;
+    width: 70vw;
+    margin-left: 15vw;
+    margin-top: 5%;
+  }
+  .msgSectionForm{
+    display: flex;
+    flex-direction: column;
+  }
+  .wrapNameEmail{
+    display: flex;
+    flex-direction: column;
+   
+    width: 100%;
+    height: 40%;
+  }
+  .nameFlex{
+    flex:1;
+    width: 100%;
+    height: 10vh;
+  }
+  .name1{
+    width: 100%;
+    height: 50%;
+    font-size:4vw;
+    top: 12vh;
+  }
+  .emailFlex{
+    flex:1;
+    width: 100%;
+    height: 10vh;
+    margin: auto;
+  }
+  .email1{
+    width: 100%;
+    height: 50%;
+    font-size: 4vw;
+  }
+  .nameLabel{
+    font-size: 3.5vw;
+    margin-top: 1vh;
+    }
+  .emailLabel{
+    font-size: 3.5vw;
+    margin-top: 1vh;
+    }
+  
+  .msgForm{
+    margin-top: 2vh;
+    width: 100%;
+    height: 95%;
+    
+  }
+  .textClass{
+    font-size: 3.5vw;
+  }
+  .textArea2{
+    font-size: 3.25vw;
+  }
+  .btn{
+    width: 80%;
+    height: 8vh;
+    margin-left: 10%;
+    margin-top: 10vh;
+    font-size: 6vw;
+  }
+
+  /* ####### SECTION - 5 BOTTOM Section ### */
+   .section5TopDiv{
+    display: flex;
+    flex-direction:column;
+    width: 100vw;
+   }
+  /*.lsSpan{width: 40%;}*/
+
+  .ls{width: 60%;}
+  .left1{font-size: 3.75vw;}
+  .left2,.left3{font-size:3vw;}
+  .sec5LeftSpan{
+    flex:1;
+    
+    }
+  .sec5RightSpan{
+   flex: 1;
+   }
+   .rs{
+    width: 90%;
+    font-size: 3vw;
+    margin-top: 16%;
+   }
+   .copyRightSign{width: 50vw;}
+   .cs1{font-size: 3.25vw;margin-left: 4vw;}
+   .cs2{font-size: 3.50vw;margin-left: 1vw;}
+   .socialMediaSpan{width: 50vw;}
+   .socialMediaIcons{
+    font-size: 4vw;
+    top:2vh;
+    
+    }
+
+
+}
+
+/* ~~~~~~ MaX-WIDTH: 481PX , MiN-WIDTH: 321PX ~~~~~~~ */
+/* ####### ORIENTATION(POrTRAiT) MEDIA-QUERY ############ */
+
+@media screen and (min-width:280px) and 
+(max-width:321px) and 
+  (orientation:portrait){
+    /* *****#### SECTION-3 ####*****   */
+  .part3{
+    display: flex;
+    flex-direction: column;
+  }
+  .para1Part3{
+    display: flex;
+    flex-direction: row;
+    margin-top: 4vh;
+    
+    /*margin-left: 2vw;   */
+  }
+  .heading1Part3{
+    font-size:5vw;
+    margin-left: 12vw;
+    }
+  .spanO{font-size: 5vw;}
+  .pa{
+    font-size:2.5vw;
+    
+    line-height:1.4;
+    width: 40vw;
+    margin-left: 1.5vw;
+    font-weight: bold;
+  }
+  .pa2{margin-left: 5vw;margin-top: .25rem;}
+  
+  ._span{display: none;}
+  .part3 article{
+    width:100vw;
+    height: 100vh;
+  }
+    
+    .part3Article1{
+      position: absolute;
+       width: 80%;
+       height: 80%;
+       margin-left: 1.25vw;
+       
+
+     }
+     .part3Article2{
+      position: absolute;
+   
+      
+       width: 100%;
+       height: 45%;
+     }
+     .ilusrtationImg{
+       margin-top: 1%;
+       height: 78%;
+       width: 90%;
+     }
+     .imgA1{
+       margin-top: 0;
+       width: 96%;
+       height: 98%;
+       margin-left: 2%;
+       
+     }  
+     .gearSpan1{
+      display: block;
+      font-size: 16vw;
+      margin-top: -7vh;
+      margin-left: 24vw;
+      color:black;
+      opacity: .4;
+       }
+    .gearSpan2{
+      display: block;
+      font-size: 10vw;
+      margin-top: -1vh;
+      margin-left: 35vw;
+      color:rgb(94, 79, 79);
+      opacity: .4;
+      }
+      .textPawanSpan{
+        display: block;
+        text-decoration: wavy;
+        font-size: 6vw;
+        color:rgb(159, 159, 185);
+        margin-top: 12vh;
+        margin-left:70vw ;
+      } 
+
+      .sec4BottomPara{
+        width: 100%;
+        margin-left: 0%;
+        padding: 0;
+        height: 44%;
+        margin-top: 5%;
+        font-size: 5vw;
+        padding-top: 2%;
+        padding-left: 20%;
+       
+       }
+       .spanS1{
+        font-size: 1.5rem;
+        margin-left: 20%;
+        margin-top: 0%;
+      }
+    }
+      
+   
+
+ 
+
+    
+   
+
+
+
+
+
