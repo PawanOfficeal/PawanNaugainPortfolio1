@@ -11,7 +11,8 @@ body {
   height: 100%;
   width: 100%;
   font-size: 100%;
-} 
+}
+ 
 main {
   width: 100%;
   height: 100%;
@@ -28,7 +29,17 @@ main {
   
   /* important */
   scroll-snap-align: start;
-  } 
+  }
+ 
+ .section a:visited{
+  text-decoration: none;
+ }
+ .section a:hover{
+  text-decoration: none;
+ }
+ .section a:active{
+  text-decoration: none;
+ }
 
 .section1 {
  min-height: 100%;
@@ -65,6 +76,8 @@ background-color: rgb(5, 142, 184);
     width: 0 !important;
     display: none;
     }
+
+    
 
     /* ### CSS For Change 
      Diamond Style While Scrolling On Each Section ### */
@@ -118,7 +131,7 @@ background-color: rgb(5, 142, 184);
   .changeDiamondCSS1{
       transform: translateX(-20px);
       opacity: 1;
-      color:red;
+      color:rgb(80, 10, 76);
      } 
     /* .changeDiamondCSS1{
       transform: translate(1.5vw);
@@ -166,14 +179,19 @@ background-color: rgb(5, 142, 184);
      margin-top: 7vh;
     
    }
-   
+   /* Mobile Menu Links CSS */
+   .mobileMenuLinks{
+         color:rgb(102, 44, 211);
+         text-decoration: none;
+   }
+   .mobileMenuLinks:hover{color:hsl(229, 85%, 11%);} 
    .lsM{
      margin-top:5vh;
      position: relative;
      width: 80%;
      height: 2rem;
      /*border: .5px solid white;*/
-     
+     color:rgb(102, 44, 211);
      cursor: pointer;
      /*text-align: center;*/
      padding-top: .5rem;
@@ -187,6 +205,10 @@ background-color: rgb(5, 142, 184);
      width: 80%;
      
    }
+   .left3M{
+    width: 80%;
+    
+  }
    
    .rightSpan{
      flex:55%;
@@ -199,7 +221,7 @@ background-color: rgb(5, 142, 184);
      
    }
    .rsM{
-     
+    color:rgb(102, 44, 211);
     font-size: 1vw;
     margin-top:5vh;
    
@@ -1077,6 +1099,15 @@ z-index: -1;
   background-color: transparent;
   transition: all 1s linear;
  }
+.aaaa{text-decoration: none;color:white;}
+ .sec4BottomPara i{
+     margin-left: 4vw;
+     font-size: 1.8vw;
+     color:white;
+     
+     cursor: pointer;
+     opacity: 1;
+ }
  .sec4BottomPara:hover{background-color: hsl(229, 85%, 11%);}
  .spanS1{
   /*position: relative;*/
@@ -1084,7 +1115,7 @@ z-index: -1;
   
   font-size: 1.8vw;
   color:white;
-  margin-left: 5vw;
+  margin-left: 10vw;
   cursor: pointer;
   opacity: 0;
  }
@@ -1250,12 +1281,7 @@ input:focus{
   border-radius: 4px;
 }
 
-
-
-
-
-
- /* ##########--------Section 5 --------######### */
+/* ##########--------Section 5 --------######### */
 
 .section5TopDiv{
   width: 100%;
@@ -1280,7 +1306,7 @@ input:focus{
   height: 2.2rem;
   cursor: pointer;
   padding-top: .5rem;
-  
+  /*color:hsl(229, 85%, 11%);*/
 }
 .left1{font-size: 1.3vw; color:rgb(197, 186, 186);}
 .ls:hover{color:hsl(184, 85%, 13%);font-weight:500;}
@@ -1360,7 +1386,14 @@ input:focus{
   cursor: pointer;
 }
 
+/* Links In Footer Section FROM: section5TopDiv   */
+.sec5Link{text-decoration: none; color:white;}
+.sec5Link:hover{text-decoration: none; color:hsl(229, 85%, 11%);}
 .sm:hover{color:hsl(229, 85%, 11%);font-weight: 500;}
+
+/* Links In Footer Section FROM: section5BottomDiv   */
+._sec5Icon{color:white;}
+._sec5Icon:hover{color:hsl(184, 85%, 13%);}
  
 /*@ media query @ media query @ media query @ media query  */ 
 /* #################### MEDIA_QUERY ############### */
@@ -1503,6 +1536,33 @@ input:focus{
       .para2b3{font-size: 2vw;top:10vh;line-height: 1.5;}
       .fontDesign2{font-size: 5vw;margin-top: 1vh;}
       .rsSpan{margin-top: 16vh;}
+
+      /* Mobile Menu Links CSS */
+   .mobileMenuLinks{
+    position: relative;
+    color:rgb(102, 44, 211);
+   
+    display: block;
+    text-decoration: none;
+}
+.mobileMenuLinks:hover{color:hsl(229, 85%, 11%);} 
+/*.lsM{
+margin-top:5vh;
+position: relative;
+width: 80%;
+height: 2rem;
+
+color:rgb(102, 44, 211);
+cursor: pointer;
+
+padding-top: .5rem;
+
+}*/
+.lsM:hover{color:rgb(5, 142, 184);font-weight:500;}
+.left1M{
+cursor:default;color:rgb(102, 44, 211);
+}
+
 }
 
 
@@ -1516,6 +1576,16 @@ input:focus{
            (orientation:portrait){
       
      /* ##### HOME PAGE/ Section-1 ######  */
+    .lsM{display: inline-block; color:hsl(229, 85%, 11%);}
+     
+    .bigMobilePhMenuHref{
+      display: inline-block;
+      width: 80%;
+      height: 2rem;
+      position: inherit;
+      text-decoration: none; 
+      color: hsl(229, 85%, 11%);
+    }
      
      .para1{
       font-size: 3.5vw;margin-top: 4.5vh;
@@ -1722,7 +1792,20 @@ input:focus{
  @media screen and (min-width:320px) and 
     (max-width:480px) and 
       (orientation:portrait){ 
-  
+        .bigMobilePhMenu a:link{
+          text-decoration: none;
+          color:white;
+         }
+         .section a:visited{
+          text-decoration: none;
+         }
+         .section a:hover{
+          text-decoration: none;
+         }
+         .section a:active{
+          text-decoration: none;
+         }
+        
     .para1{
       font-size: 4.5vw; 
       margin-top: 4.5vh; 
@@ -1799,6 +1882,34 @@ input:focus{
     padding-left: 2vw;
     margin-top:-4vh;
    }
+
+   /* ********************* */
+    /* Mobile Menu Links CSS */
+    .mobileMenuLinks{
+      position: relative;
+      color:rgb(102, 44, 211);
+     
+      display: block;
+      text-decoration: none;
+  }
+  .mobileMenuLinks:hover{color:hsl(229, 85%, 11%);} 
+  .lsM{
+  margin-top:5vh;
+  position: relative;
+  width: 80%;
+  height: 2rem;
+  
+  color:rgb(102, 44, 211);
+  cursor: pointer;
+  
+  padding-top: .5rem;
+  
+  }
+  .lsM:hover{color:rgb(5, 142, 184);font-weight:500;}
+  .left1M{
+  cursor:default;color:rgb(102, 44, 211);
+  }
+  
 
    /* section-2 */
    .part2{display: block;flex: none;}
@@ -2103,6 +2214,21 @@ input:focus{
 @media screen and (min-width:280px) and 
 (max-width:321px) and 
   (orientation:portrait){
+
+    .bigMobilePhMenu a:link{
+      text-decoration: none;
+      color:white;
+     }
+     .section a:visited{
+      text-decoration: none;
+     }
+     .section a:hover{
+      text-decoration: none;
+     }
+     .section a:active{
+      text-decoration: none;
+     }
+    
     /* *****#### SECTION-3 ####*****   */
   .part3{
     display: flex;

@@ -1,27 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!--
-    
-  -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+  <!-- for tiny icon on corner of web page tab (favion) -->
+    <link rel="icon" type="image/x-icon" href=".\myImages\px7.png">
     
+  <!--Meta Tags For Better SEO-->
+    <meta name="description" content="example web site for front end developer for beginners to intermediate use 
+    html5 css and some javascript">
+      <meta name="keywords" content="front end web , HTML , CSS ,CSS animation , javascript, beginners">
+       <meta http-equiv="X-UA-Compatible" content="IE=7">
+      <meta name="author" content="Pawan Naugain">
+      <!--refresh web page automatically in 10 sec -->
+    <!--<meta http-equiv="refresh" content="10">-->
     
+  <!-- ************************** -->
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/574caba2d3.js" crossorigin="anonymous"></script>
-    <title>Document</title>
+    <title>front end dev</title>
 </head>
 
       <main>
      
         <section class="section1 part1 section sec1" id="test" itemid="section1">
-         <span class="homeSpan">
-              <span class="fontAwesomeHome">
-                <i class="fa-solid fa-house"></i>
-              </span>
+          <a href="#test">
+          <span class="homeSpan">
+            <span class="fontAwesomeHome">
+              <i class="fa-solid fa-house"></i>
             </span>
-                  
+          </span>
+         </a>       
             <span class="hamMenuSpan">
                 <p class="nav-line nav-line1" id="navLine1"></p>
                 <p class="nav-line nav-line2" id="navLine2"></p>
@@ -55,9 +65,10 @@
         </div>
         </span>
         <span class="div1p picDiv">
-         <img src=".\myImages\px8.png" alt="pic1" class="imgClass">
+         <img src=".\myImages\px8.png" alt="profile pic of author" class="imgClass">
         </span>
-        <span class="div1Home">
+        <!--<span class="div1Home">-->
+        
          <div class="divLeftHome">
           <p class="diamondFont diamond1 d1"><i class="fa-solid fa-diamond"></i></p>
           <p class="diamondFont diamond2 d2"><i class="fa-solid fa-diamond"></i></p>
@@ -66,25 +77,47 @@
           <p class="diamondFont diamond5 d5"><i class="fa-solid fa-diamond"></i></p>
           <p class="diamondFont diamond6 d6"><i class="fa-solid fa-diamond"></i></p>
          </div>
-        </span>
+         <!--</span>-->
+        
        
   <!--#################  Mobile Phone Menu/Side Menu  #################-->
           <div class="hamMenu bigMobilePhMenu">
               <!--------footer Top Div------>
           <div class="topDiv">
-            <span class="leftSpan">
+             <span class="leftSpan">
              <span class="lsSpanM">
               <p class="lsM left1M">SAY HELLO</p>
-              <p class="lsM left2M">pawan.officeal@gmail.com</p>
-              <p class="lsM left3M">Linked in</p>
+              <p class="lsM left2M">
+                <span class="bigMobilePhMenuHref">
+                  <a class="mobileMenuLinks" 
+                   target="_blank">pawan.officeal@gmail.com</a>
+                </span>
+                
+              </p>
+              <p class="lsM left3M">
+                <span class="bigMobilePhMenuHref">
+                  <a class="mobileMenuLinks" 
+                  href="https://www.linkedin.com/in/pawan-naugain-590aa5269/" target="_blank">Linked in</a>
+                </span>
+      
+              </p>
              </span>
             </span>
 
             <span class="rightSpan">
              <span class="rsSpanM">
-              <p class="rsM right1M">My Work</p>
-              <p class="rsM right2M">My Resume</p>
-              <p class="rsM right2M">My gitHub</p>
+              <p class="rsM right1M">
+                <a href="seeMyWork.html" class="mobileMenuLinks" target="_blank">My Work</a>
+              </p>
+              <p class="rsM right2M">
+                <a href="seeMyWork.html" class="mobileMenuLinks" target="_blank">My Resume</a>
+              </p>
+              <p class="rsM right2M">
+               <span class="bigMobilePhMenuHref">
+                <a class="mobileMenuLinks" href="https://github.com/PawanOfficeal" target="_blank">My gitHub</a>
+               </span>
+                
+              </p>
              </span>
             </span>
           </div>
@@ -228,8 +261,8 @@
          <span class="window _span"><i class="fa-brands fa-windows"></i></span>
           -->
               
-           <img src=".\myImages\imgForMobile.png" class="phoneImg" alt="phoneImg">
-            <img src=".\myImages\readingMan2.png" class="imgA1" alt="imgA">
+           <img src=".\myImages\imgForMobile.png" class="phoneImg" alt="this image is for phone">
+            <img src=".\myImages\readingMan2.png" class="imgA1" alt="this image is used for big screen">
               
           </div>
          </article>
@@ -239,7 +272,7 @@
          <!-- ################ SECTION-4 **Part-4** ################# -->
         
          <section class="section4 section sec4" id="section4">
-          <img class="sec4BGImg" src=".\myImages\bigWave2Img.png" alt="bgImg"\>
+          <img class="sec4BGImg" src=".\myImages\bigWave2Img.png" alt="this is background image">
          <!------SectioN 4 /top part----------->
           <div class="section4Div1">
             <p class="section4Para1">My learning journey</p>
@@ -262,10 +295,12 @@
             </div>
             <div class="section4BottomSpan2"> 
               <!--JS to change Style (sec4BottomPara)-->
-              <p class="sec4BottomPara">SEE MY WORK<span class="spanS1">
-                <i class="fa-solid fa-arrow-right-long"></i>
-               </span>
-              </p>
+              
+               <p class="sec4BottomPara"><a class="aaaa" href="seeMyWork.html">SEE MY WORK </a>
+          <!--<span class="spanS1"><i class="fa-solid fa-arrow-right-long"></i></span>-->
+                 <i class="fa-solid fa-arrow-right-long"></i>
+               </p>
+              
             </div>
             
             
@@ -328,15 +363,24 @@
                 <span class="lsSpan">
                  <p class="ls left1">SAY HELLO</p>
                  <p class="ls left2">pawan.officeal@gmail.com</p>
-                 <p class="ls left3">Linked in</p>
+                 <p class="ls left3">
+                   <a class="sec5Link" href="https://www.linkedin.com/in/pawan-naugain-590aa5269/" target="_blank">Linked in</a>
+                 </p>
                 </span>
                </span>
 
                <span class="sec5RightSpan">
                 <span class="rsSpan">
-                 <p class="rs right1">My Work</p>
-                 <p class="rs right2">My Resume</p>
-                 <p class="rs right2">My gitHub</p>
+                 <p class="rs right1">
+                  <a href="seeMyWork.html" class="sec5Link" target="_blank">My Work</a>
+                 </p>
+                 <p class="rs right2">
+                  <a href="seeMyWork.html" class="sec5Link" target="_blank">My Resume</a>
+                  
+                </p>
+                 <p class="rs right2">
+                  <a class="sec5Link" href="https://github.com/PawanOfficeal" target="_blank">My gitHub</a>
+                 </p>
                 </span>
                </span>
              </div>
@@ -356,11 +400,24 @@
                 <!---Right ******-->
                 <span class="socialMediaSpan">
                   <span class="socialMediaIcons">
-                    <span class="fb sm"><i class="fa-brands fa-facebook-f"></i></span>
-                     <span class="linkedIn sm"><i class="fa-brands fa-linkedin-in"></i></span>
-                     <span class="twitter sm"><i class="fa-brands fa-twitter"></i></span>
+                    <span class="fb sm">
+                      <a href="" class="sec5iconFaceBook _sec5Icon" target="_blank">
+                        <i class="fa-brands fa-facebook-f"></i>
+                      </a>
+                     </span>
+                     <span class="linkedIn sm">
+                      <a href="https://www.linkedin.com/in/pawan-naugain-590aa5269/" class="sec5iconLinkedIn _sec5Icon" target="_blank">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                      </a>
+                     </span>
+                     <span class="twitter sm">
+                      <a href="https://twitter.com/NaugainPawan" class="sec5iconTwitter _sec5Icon" target="_blank">
+                        <i class="fa-brands fa-twitter"></i>
+                      </a>
+                     </span>
+                  
                     <span class="mail sm"><i class="fa-solid fa-at"></i></span>
-                  </span>
+                  
                 </span>
              </div>
         
